@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 25 15% 97%;
+    --foreground: 20 14% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 4%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 60 9% 98%;
+    --secondary-foreground: 24 100% 10%;
+
+    --muted: 60 9% 98%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 12 6% 15%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 24 100% 50%;
+
+    /* Chess-specific colors */
+    --chess-light: 40 33% 90%;
+    --chess-dark: 35 25% 70%;
+    --chess-board-border: 30 20% 50%;
+    --chess-highlight: 60 100% 85%;
+    --chess-legal-move: 120 50% 80%;
+    --chess-last-move: 200 80% 80%;
+    --chess-check: 0 85% 75%;
+    --chess-white-piece: 0 0% 95%;
+    --chess-black-piece: 220 15% 20%;
+
+    /* Game UI colors */
+    --game-panel: 30 15% 96%;
+    --game-panel-border: 30 10% 85%;
+    --player-white: 0 0% 100%;
+    --player-black: 220 15% 20%;
+    --timer-warning: 35 100% 60%;
+    --timer-danger: 0 100% 60%;
+
+    /* Gradients */
+    --gradient-board: linear-gradient(135deg, hsl(var(--chess-light)), hsl(var(--chess-dark)));
+    --gradient-panel: linear-gradient(180deg, hsl(var(--game-panel)), hsl(var(--background)));
+
+    /* Shadows */
+    --shadow-board: 0 8px 32px -8px hsl(var(--chess-board-border) / 0.3);
+    --shadow-piece: 0 4px 12px hsl(var(--chess-black-piece) / 0.2);
+    --shadow-panel: 0 4px 16px hsl(var(--game-panel-border) / 0.1);
+
+    /* Animations */
+    --transition-piece: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 14% 4%;
+    --foreground: 60 9% 98%;
+
+    --card: 20 14% 4%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 20 14% 4%;
+    --popover-foreground: 60 9% 98%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 20 14% 4%;
+
+    --secondary: 12 6% 15%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 12 6% 15%;
+    --muted-foreground: 24 5% 64%;
+
+    --accent: 12 6% 15%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 12 6% 15%;
+    --input: 12 6% 15%;
+    --ring: 24 100% 50%;
+
+    /* Chess-specific colors - dark mode */
+    --chess-light: 35 20% 25%;
+    --chess-dark: 30 15% 15%;
+    --chess-board-border: 25 10% 10%;
+    --chess-highlight: 60 80% 60%;
+    --chess-legal-move: 120 40% 50%;
+    --chess-last-move: 200 60% 60%;
+    --chess-check: 0 75% 65%;
+    --chess-white-piece: 0 0% 90%;
+    --chess-black-piece: 220 15% 15%;
+
+    /* Game UI colors - dark mode */
+    --game-panel: 15 10% 8%;
+    --game-panel-border: 15 8% 15%;
+    --player-white: 0 0% 95%;
+    --player-black: 220 15% 15%;
+    --timer-warning: 35 90% 55%;
+    --timer-danger: 0 90% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
