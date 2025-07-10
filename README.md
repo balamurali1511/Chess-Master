@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+♟️ Chess Master
+About the Project
+Chess Master is a simple two-player chess game built with React + TypeScript. I made this as a fun side project — something to kill time, challenge the mind, and sharpen your decision-making. Whether you're casually playing with a friend or just testing yourself, it’s a clean and minimal chess interface made to be quick and enjoyable.
 
-## Project info
+🛠 Tech Stack
+React
 
-**URL**: https://lovable.dev/projects/1adb8033-5ee8-49cb-b42c-ba338980dee3
+TypeScript
 
-## How can I edit this code?
+Vite
 
-There are several ways of editing your application.
+Tailwind CSS
 
-**Use Lovable**
+shadcn/ui (for polished UI components)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1adb8033-5ee8-49cb-b42c-ba338980dee3) and start prompting.
+💡 Features
+Full chess board with all standard moves
 
-Changes made via Lovable will be committed automatically to this repo.
+Timer for both players
 
-**Use your preferred IDE**
+Captured piece tracking
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Move history
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Clean UI with multiple theme options (Classic, Wooden, Modern, Glass)
 
-Follow these steps:
+Flip board, Undo, and Reset options
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Responsive design — works on mobile and desktop
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+📦 Setup Locally
+git clone https://github.com/balamurali1511/Chess-Master.git
+cd Chess-Master
+npm install
 npm run dev
-```
+Open http://localhost:5173 in your browser.
 
-**Edit a file directly in GitHub**
+🚀 Deployment
+To deploy it yourself:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+npm run build
+npm run deploy
+Or host it anywhere that supports static sites.
 
-**Use GitHub Codespaces**
+Live demo:
+https://balamurali1511.github.io/Chess-Master/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🧠 Why Chess?
+Because it forces you to think ahead. One bad move, and you're done.
+It’s not just a game — it’s strategy, patience, and awareness packed into 64 squares.
 
-## What technologies are used for this project?
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1adb8033-5ee8-49cb-b42c-ba338980dee3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Made with 🧡 by Murali!
